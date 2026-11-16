@@ -1,3 +1,33 @@
 p {
     font-family: "Anonymous Pro", monospace;
 }
+
+/* Styling the font awesome icons */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+}
+
+/* Hover effects for the font awesome icons */
+.fa:hover {
+    opacity: 0.6;
+}
+
+/* Specific colors for different social media icons */
+
+/* YouTube */
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+
+/* LinkedIn */
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
