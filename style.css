@@ -1,10 +1,5 @@
 /* Setting up fonts */
-
-p {
-    font-family: "Anonymous Pro", monospace;
-}
-
-h {
+* {
     font-family: "Anonymous Pro", monospace;
 }
 
