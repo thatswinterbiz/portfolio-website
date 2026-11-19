@@ -3,6 +3,11 @@
     font-family: "Anonymous Pro", monospace;
 }
 
+/* Colour background */
+body {
+    background-color: #010b13;
+}
+
 /* Styling the font awesome icons */
 .fa {
     padding: 20px;
@@ -33,6 +38,12 @@
     color: white;
 }
 
+/* GitHub */
+.fa-github {
+    background: #333333;
+    color: white;
+}
+
 /* For the portfolio page */
 
 * {
@@ -40,7 +51,7 @@
 }
 
 body {
-    background-color: #f2f2f2;
+    background-color: #010b13;
     padding: 20px;
 }
 
