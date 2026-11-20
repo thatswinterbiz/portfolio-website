@@ -80,6 +80,14 @@ body {
     margin-top: 0;
 }
 
+/* Row of social buttons */
+.socials {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 24px;
+}
+
 /* Shared circle styles for every social button */
 .socials .fa,
 .socials .social-icon {
@@ -211,7 +219,7 @@ h1 {
 
 /* Content */
 .content {
-    background-color: white;
+    background-color: black;
     padding: 10px;
 }
 
