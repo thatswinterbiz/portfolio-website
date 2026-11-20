@@ -9,80 +9,159 @@ body {
     background-color: #010b13;
 }
 
-/* Styling the nav header */
+/* Page wrapper keeps everything centred and aligned */
+.top {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Header / navigation: logo on left, others on the right */
 .header {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-weight: 1000;
-    margin: 0;
-    flex-grow: 1;
     width: 100%;
     font-size: 20px;
+    margin: 0 0 24px;
 }
 
 /* Styling the nav header */
 .header-nav {
+    width: 100%;
     font-size: 16px;
-    font-weight: normal;
-    align-items: center;
 }
 
 /* Styling the nav list */
 .nav-list {
     display: flex;
+    align-items: center;
     gap: 24px;
     padding: 0;
     margin: 0;
     list-style-type: none;
 }
 
-/* Styling the font awesome icons */
-.fa {
-    padding: 20px;
-    font-size: 30px;
-    width: 50px;
-    text-align: center;
-    text-decoration: none;
-    margin: 5px 2px;
-    border-radius: 50%;
+/* Pushes Projects and About to the right */
+.nav-list .nav-right {
+    margin-left: auto;
 }
 
-/* Hover effects for the font awesome icons */
-.fa:hover {
+.nav-list .nav-right~.nav-right {
+    margin-left: 0;
+}
+
+.nav-list a {
+    text-decoration: none;
+}
+
+.nav-list img {
+    display: block;
+    height: 60px;
+    width: auto;
+}
+
+/* Hero section: image on left, text + socials on right */
+.hero {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+}
+
+.hero-image {
+    flex: 0 0 auto;
+    width: 380px;
+    max-width: 45%;
+    height: auto;
+}
+
+.hero-text {
+    flex: 1;
+    text-align: left;
+}
+
+.hero-text h2 {
+    margin-top: 0;
+}
+
+/* Shared circle styles for every social button */
+.socials .fa,
+.socials .social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 60px;
+    width: 60px;
+    height: 60px;
+    padding: 0;
+    margin: 0;
+    font-size: 30px;
+    line-height: 1;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    color: white;
+}
+
+.socials .social-icon img {
+    width: 60%;
+    height: 60%;
+    object-fit: contain;
+}
+
+.socials .social-icon.mail img {
+    width: 100%;
+    height: 100%;
+}
+
+.socials .fa:hover,
+.socials .social-icon:hover {
     opacity: 0.6;
 }
 
-/* Specific colors for different social media icons */
+/* Stack the hero on small screens */
+@media screen and (max-width: 700px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
 
-/* YouTube */
-.fa-youtube {
+    .hero-image {
+        max-width: 80%;
+    }
+
+    .hero-text {
+        text-align: center;
+    }
+
+    .socials {
+        justify-content: center;
+    }
+}
+
+/* Specific colours for different social buttons */
+.socials .fa-youtube {
     background: #bb0000;
-    color: white;
 }
 
-/* LinkedIn */
-.fa-linkedin {
-    background: #007bb5;
-    color: white;
+.socials .fa-linkedin {
+    background: #0077b5;
 }
 
-/* GitHub */
-.fa-github {
+.socials .fa-github {
     background: #333333;
-    color: white;
 }
 
-/* Itch.io */
-.fa-itch-io {
-    background: #fa5c5c;
-    color: white;
+.socials .social-icon.itch {
+    background: #f5f5f5;
 }
 
-/* Email */
-.fa-envelope {
-    background: #000000;
-    color: white;
+.socials .social-icon.mail {
+    background: #f5f5f5;
+}
+
+/* Footer */
+footer {
+    max-width: 1000px;
+    margin: 40px auto 0;
+    text-align: center;
+    font-size: 14px;
 }
 
 /* For the portfolio page */
